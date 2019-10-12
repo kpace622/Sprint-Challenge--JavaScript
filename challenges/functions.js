@@ -36,7 +36,9 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // ==== Closures ==== 
 
 // Explain in your own words why nestedfunction can access the variable internal.
-
+// functions can always access variables that are above their scope. For example, nestedFunction can access any variable inside of myFunction.
+// nestedFunction can also access any variable in the global scope. However, functions cannot access variable that are declared below them(below isn't really a good way to describe it, nested inside them?). 
+// For example, if nestedFunction had a const internal2 = "Hello! I'm inside nestedFunction" then myFunction would not be able to acces that variable.
 // Explanation: 
 
 
